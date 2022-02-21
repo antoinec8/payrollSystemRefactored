@@ -4,19 +4,19 @@ Sistema de folha de pagamento refatorado.
 
 REFACTORING
 
-Strategy
+STRATEGY
 
 Foi aplicado o DP Strategy na classe PaymentSchedule para solucionar problemas de complexidade dos métodos de pagamento para os diferentes tipos de agenda: Cada agenda agora possui uma classe própria, onde implementam os métodos getMonthlyDiv e isDateToPay, definidos na interface ScheduleStrategy; 
 
-Memento
+MEMENTO
 
 Foi aplicado o DP Memento para prover as funcionalidades de undo/redo da Classe Company: Os métodos de salvar estado atual, undo e redo são de responsabilidade da classe CaretakerCompany, enquanto o estado é salvo como um objeto da classe Memento Company;
 
-Removal of Generative Speculation
+REMOVAL OF GENERATIVE SPECULATION
 
 Remoção dos métodos, parâmetros e importações não utilizados no projeto;
 
-Hide Delegate
+HIDE DELEGATED
 
 Criação dos métodos isCommissioned, isSalaried e isHourly para ocultar a chamada dos métodos .getClass().isAssignableFrom(). 
 
