@@ -29,22 +29,31 @@ Criação dos métodos isCommissioned, isSalaried e isHourly para ocultar a cham
 CODE SMELLS
 \
 \
-Código duplicado nos métodos editEmployeeMenu e createEmployee da classe EmployeeController;
+-> Código duplicado nos métodos editEmployeeMenu e createEmployee da classe EmployeeController;
 \
-Métodos construtores da classe Employee;
 \
-Classes TimeCard eAdditionalServiceTax, além de, addSaleResult e addTimeCard são muito similares;
+-> Métodos construtores da classe Employee;
 \
-Muitos métodos não são utilizados, como métodos get/set e construtores vazios e isLastWeekOfMonth da classe DateUtil;
 \
-Parâmetro id da classe PaymentSchedule não é utilizado;
+-> Classes TimeCard eAdditionalServiceTax, além de, addSaleResult e addTimeCard são muito similares;
 \
-Importações de classes não utilizadas nas classes Company e EmployeeSyndicate;
 \
-No método editEmployeeMenu da classe EmployeeController, a chamada dos métodos construtores das classes Hourly, Commissioned e Salaried recebem parâmetros de um único objeto ao invés do mesmo;
+-> Muitos métodos não são utilizados, como métodos get/set e construtores vazios e isLastWeekOfMonth da classe DateUtil;
 \
-Método menu da classe Menu possui diversos tratamentos para as opções do menu;
 \
-Classe Menu possui métodos da lógica das funcionalidades de undo/redo;
+-> Parâmetro id da classe PaymentSchedule não é utilizado;
 \
-Classe PaymentController trata tanto das PaymentSchedule quanto da payroll.
+\
+-> Importações de classes não utilizadas nas classes Company e EmployeeSyndicate;
+\
+\
+-> No método editEmployeeMenu da classe EmployeeController, a chamada dos métodos construtores das classes Hourly, Commissioned e Salaried recebem parâmetros de um único objeto ao invés do mesmo;
+\
+\
+-> Método menu da classe Menu possui diversos tratamentos para as opções do menu;
+\
+\
+-> Classe Menu possui métodos da lógica das funcionalidades de undo/redo;
+\
+\
+-> Classe PaymentController trata tanto das PaymentSchedule quanto da payroll.
